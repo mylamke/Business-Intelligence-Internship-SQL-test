@@ -1,6 +1,6 @@
-# Business-Intelligence-Internship-SQL-test
+## Business-Intelligence-Internship-SQL-test
 
-#1. The company has employees who manages portfolios of advertisers (table A). These advertisers generate revenue for X on a daily basis (table B). Write a query that shows the total revenue by employee_id.
+##1. The company has employees who manages portfolios of advertisers (table A). These advertisers generate revenue for X on a daily basis (table B). Write a query that shows the total revenue by employee_id.
 
     SELECT
         A.string_field_1 AS employee_id,
@@ -24,7 +24,7 @@
 
 
     
-#2. The company categorises all revenue within 90 days of an advertisers launch date as "new business" , and anything stricly over 90 days as "existing business". Write a query that shows the total new business and existing business revenue.
+##2. The company categorises all revenue within 90 days of an advertisers launch date as "new business" , and anything stricly over 90 days as "existing business". Write a query that shows the total new business and existing business revenue.
 
     SELECT
         CASE
@@ -48,7 +48,7 @@
 
 
     
-#3. The company has 2 products where revenue by advertiser is logged in separate tables (table A for product A and table B for product B). Write a query that shows the revenue, by advertiser, and by product.
+##3. The company has 2 products where revenue by advertiser is logged in separate tables (table A for product A and table B for product B). Write a query that shows the revenue, by advertiser, and by product.
 
     SELECT
         advertiser_id,
@@ -91,7 +91,7 @@
 
 
 
-#4. The company is rolling out a new customer segmentation called customer type to better understand business trends with the following rules:
+##4. The company is rolling out a new customer segmentation called customer type to better understand business trends with the following rules:
 - An advertiser is considered a Key Account if it is flagged as a Key Account or is Segment 1
 - An advertiser is considered a Core Account if it is Segment 2 or 3
 - An advertiser is considered a Tail Account if it is Segment 4
