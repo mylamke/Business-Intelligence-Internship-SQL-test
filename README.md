@@ -22,6 +22,7 @@
 | E1          | 3647                |
 | E2          | 3664                |
 
+
     
 #2. The company categorises all revenue within 90 days of an advertisers launch date as "new business" , and anything stricly over 90 days as "existing business". Write a query that shows the total new business and existing business revenue.
 
@@ -43,6 +44,8 @@
 |-------------------|---------------|
 | Existing Business | 2873          |
 | New Business      | 4438          |
+
+
 
     
 #3. The company has 2 products where revenue by advertiser is logged in separate tables (table A for product A and table B for product B). Write a query that shows the revenue, by advertiser, and by product.
@@ -84,6 +87,8 @@
 | C             | Product A    | 1231          |
 | D             | Product A    | 1445          |
 | E             | Product A    | 1940          |
+
+
 
 
 #4. The company is rolling out a new customer segmentation called customer type to better understand business trends with the following rules:
