@@ -14,6 +14,14 @@
         A.string_field_1
     ORDER BY
         A.string_field_1;
+
+        employee_id	total_daily_revenue	
+
+| employee_id | total_daily_revenue |
+|-------------|---------------------|
+| E1          | 3647                |
+| E2          | 3664                |
+
     
 #2. The company categorises all revenue within 90 days of an advertisers launch date as "new business" , and anything stricly over 90 days as "existing business". Write a query that shows the total new business and existing business revenue.
 
@@ -30,6 +38,12 @@
             ON A.advertiser_id = B.advertiser_id
         GROUP BY
     business_category;
+
+| business_category | total_revenue |
+|-------------------|---------------|
+| Existing Business | 2873          |
+| New Business      | 4438          |
+
     
 #3. The company has 2 products where revenue by advertiser is logged in separate tables (table A for product A and table B for product B). Write a query that shows the revenue, by advertiser, and by product.
 
@@ -58,6 +72,19 @@
     GROUP BY
         advertiser_id, product_name;
 
+| advertiser_id | product_name | total_revenue |
+|---------------|--------------|---------------|
+| A             | Product B    | 1821          |
+| B             | Product B    | 1629          |
+| C             | Product B    | 1168          |
+| D             | Product B    | 1804          |
+| E             | Product B    | 1497          |
+| A             | Product A    | 2044          |
+| B             | Product A    | 1633          |
+| C             | Product A    | 1231          |
+| D             | Product A    | 1445          |
+| E             | Product A    | 1940          |
+
 
 #4. The company is rolling out a new customer segmentation called customer type to better understand business trends with the following rules:
 - An advertiser is considered a Key Account if it is flagged as a Key Account or is Segment 1
@@ -83,3 +110,9 @@
               ON A.advertiser_id = C.advertiser_id
         GROUP BY
         customer_type;
+  
+| customer_type | total_revenue |
+|---------------|---------------|
+| Key Account   | 4036          |
+| Core Account  | 1424          |
+| Tail Account  | 1242          |
