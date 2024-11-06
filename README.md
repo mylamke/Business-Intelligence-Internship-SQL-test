@@ -1,0 +1,1 @@
+# Business-Intelligence-Internship-SQL-test
