@@ -2,7 +2,7 @@
 
 ##1. The company has employees who manages portfolios of advertisers (table A). These advertisers generate revenue for X on a daily basis (table B). Write a query that shows the total revenue by employee_id.
 
-    SELECT
+    SELECT 
         A.string_field_1 AS employee_id,
         SUM(B.revenue) AS total_daily_revenue
     FROM
